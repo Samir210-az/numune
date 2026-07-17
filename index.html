@@ -1,1 +1,255 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AN Psixoloji Dəstək və Reabilitasiya Mərkəzi</title>
+<meta name="description" content="AN Psixoloji Dəstək və Reabilitasiya Mərkəzi — fərdi, ailə və qrup terapiyası, reabilitasiya proqramları. Zehni sağlamlığınız üçün təhlükəsiz və qayğıkeş mühit.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolygon points='12,2 22,20 2,20' fill='%238052ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
+<div class="bg-field"><canvas id="bg-canvas"></canvas></div>
+
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a href="#top" class="logo" aria-label="AN Mərkəzi — ana səhifə">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#8052ff"/>
+            <stop offset="100%" stop-color="#15846e"/>
+          </linearGradient>
+        </defs>
+        <polygon points="12,2 22,20 2,20" fill="url(#logoGrad)"/>
+      </svg>
+      <span>AN Mərkəzi</span>
+    </a>
+
+    <nav class="nav__links" id="nav-links">
+      <a href="#about">Haqqımızda</a>
+      <a href="#services">Xidmətlər</a>
+      <a href="#team">Komanda</a>
+      <a href="#contact">Əlaqə</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="#contact" class="btn btn--primary">Qəbula Yazıl</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Menyunu aç" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero__content">
+      <span class="label label--amber">PSİXOLOJİ DƏSTƏK VƏ REABİLİTASİYA MƏRKƏZİ</span>
+      <h1 class="display">Zehninizin<br>sükutunu birlikdə<br>tapaq.</h1>
+      <p class="body hero__body">
+        AN Mərkəzində peşəkar psixoloqlar və reabilitasiya mütəxəssisləri sizin üçün
+        fərdi proqramlar hazırlayır — təhlükəsiz, məxfi və qayğıkeş bir mühitdə.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Qəbula Yazıl</a>
+        <a href="#about" class="btn btn--ghost">Bizi tanıyın →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="split" id="about">
+    <div class="split__visual">
+      <canvas class="mini-canvas" data-variant="orbit" aria-hidden="true"></canvas>
+    </div>
+    <div class="split__text">
+      <span class="label label--amber">HAQQIMIZDA</span>
+      <h2 class="heading-sm">Sizin dinclik yolunuz<br>burada başlayır</h2>
+      <p class="body">
+        AN Psixoloji Dəstək və Reabilitasiya Mərkəzi olaraq, insanların zehni
+        sağlamlığını bərpa etmək və gücləndirmək üçün elmi əsaslara söykənən,
+        şəxsə uyğunlaşdırılmış proqramlar təqdim edirik. Komandamız klinik
+        psixoloqlar, terapevtlər və reabilitasiya mütəxəssislərindən ibarətdir.
+      </p>
+      <p class="body body--muted">
+        Hər bir insanın hekayəsi fərqlidir — buna görə də yanaşmamız heç vaxt
+        standart deyil. Sizi dinləyir, birlikdə addım-addım irəliləyirik.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services__head">
+      <span class="label label--amber">XİDMƏTLƏRİMİZ</span>
+      <h2 class="heading-sm">Fərdi ehtiyaclarınıza<br>uyğun proqramlar</h2>
+    </div>
+
+    <ul class="service-list">
+      <li class="service-item">
+        <span class="service-item__index">01</span>
+        <div>
+          <h3 class="heading-2xs">Fərdi Terapiya</h3>
+          <p class="body body--muted">Narahatlıq, depressiya, travma və digər fərdi çətinliklər üçün bir-bir seanslar.</p>
+        </div>
+      </li>
+      <li class="service-item">
+        <span class="service-item__index">02</span>
+        <div>
+          <h3 class="heading-2xs">Ailə Terapiyası</h3>
+          <p class="body body--muted">Ailə daxili ünsiyyəti və münasibətləri sağlamlaşdırmaq üçün birgə seanslar.</p>
+        </div>
+      </li>
+      <li class="service-item">
+        <span class="service-item__index">03</span>
+        <div>
+          <h3 class="heading-2xs">Qrup Terapiyası</h3>
+          <p class="body body--muted">Oxşar təcrübələri paylaşan insanlarla dəstəkləyici qrup mühiti.</p>
+        </div>
+      </li>
+      <li class="service-item">
+        <span class="service-item__index">04</span>
+        <div>
+          <h3 class="heading-2xs">Reabilitasiya Proqramları</h3>
+          <p class="body body--muted">Asılılıqdan çıxış və davranış dəyişikliyi üçün struktur olunmuş çoxmərhələli proqramlar.</p>
+        </div>
+      </li>
+      <li class="service-item">
+        <span class="service-item__index">05</span>
+        <div>
+          <h3 class="heading-2xs">Uşaq və Yeniyetmə Psixologiyası</h3>
+          <p class="body body--muted">Böyümə dövründə emosional və davranış dəstəyi.</p>
+        </div>
+      </li>
+      <li class="service-item">
+        <span class="service-item__index">06</span>
+        <div>
+          <h3 class="heading-2xs">Online Konsultasiya</h3>
+          <p class="body body--muted">İstənilən yerdən təhlükəsiz video görüş vasitəsilə dəstək.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="split split--reverse" id="approach">
+    <div class="split__visual">
+      <canvas class="mini-canvas" data-variant="cloud" aria-hidden="true"></canvas>
+    </div>
+    <div class="split__text">
+      <span class="label label--amber">YANAŞMAMIZ</span>
+      <h2 class="heading-sm">Elm, empatiya və<br>fərdi diqqət</h2>
+      <p class="body">
+        Hər proqram qiymətləndirmə ilə başlayır, ölçülə bilən hədəflərlə davam edir
+        və nəticələr müntəzəm nəzərdən keçirilir. Məxfilik və etimad bizim üçün
+        əsas prinsipdir.
+      </p>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <span class="label label--amber">KOMANDA</span>
+    <h2 class="heading-sm">Mütəxəssislərimizlə<br>tanış olun</h2>
+
+    <div class="team__track" id="team-track">
+      <article class="team-card">
+        <div class="team-card__portrait" style="--a:#8052ff;--b:#15846e;">A.M.</div>
+        <span class="team-card__role">Klinik Psixoloq</span>
+        <h3 class="team-card__name">Aygün Məmmədova</h3>
+      </article>
+      <article class="team-card">
+        <div class="team-card__portrait" style="--a:#ffb829;--b:#8052ff;">R.H.</div>
+        <span class="team-card__role">Reabilitasiya Mütəxəssisi</span>
+        <h3 class="team-card__name">Rəşad Hüseynov</h3>
+      </article>
+      <article class="team-card">
+        <div class="team-card__portrait" style="--a:#15846e;--b:#8052ff;">N.Q.</div>
+        <span class="team-card__role">Ailə Terapevti</span>
+        <h3 class="team-card__name">Nərmin Quliyeva</h3>
+      </article>
+      <article class="team-card">
+        <div class="team-card__portrait" style="--a:#8052ff;--b:#ffb829;">T.Ə.</div>
+        <span class="team-card__role">Uşaq Psixoloqu</span>
+        <h3 class="team-card__name">Turqut Əliyev</h3>
+      </article>
+    </div>
+
+    <div class="dots" id="team-dots" aria-hidden="true">
+      <span class="dot dot--active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__info">
+      <span class="label label--amber">ƏLAQƏ</span>
+      <h2 class="heading-sm">Qəbula yazılmaq<br>üçün əlaqə saxlayın</h2>
+      <p class="body body--muted">Sualınız varsa və ya ilk görüş üçün vaxt təyin etmək istəyirsinizsə, bizə yazın.</p>
+
+      <dl class="contact__details">
+        <div><dt>Ünvan</dt><dd>Bakı şəhəri, Nərimanov rayonu, C.Cabbarlı küç. 44</dd></div>
+        <div><dt>Telefon</dt><dd><a href="tel:+994123456789">+994 12 345 67 89</a></dd></div>
+        <div><dt>E-poçt</dt><dd><a href="mailto:info@an-merkezi.az">info@an-merkezi.az</a></dd></div>
+        <div><dt>İş saatları</dt><dd>B.e – Cümə, 09:00 – 19:00</dd></div>
+      </dl>
+    </div>
+
+    <form class="contact__form" id="contact-form">
+      <label>
+        <span>Ad Soyad</span>
+        <input type="text" name="name" required autocomplete="name">
+      </label>
+      <label>
+        <span>E-poçt</span>
+        <input type="email" name="email" required autocomplete="email">
+      </label>
+      <label>
+        <span>Mesajınız</span>
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn btn--primary">Göndər</button>
+      <p class="form__note" id="form-note" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <a href="#top" class="logo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <polygon points="12,2 22,20 2,20" fill="#8052ff"/>
+      </svg>
+      <span>AN Mərkəzi</span>
+    </a>
+    <nav class="footer__links">
+      <a href="#about">Haqqımızda</a>
+      <a href="#services">Xidmətlər</a>
+      <a href="#team">Komanda</a>
+      <a href="#contact">Əlaqə</a>
+    </nav>
+    <div class="footer__social">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="Facebook">FB</a>
+      <a href="#" aria-label="LinkedIn">LI</a>
+    </div>
+  </div>
+  <p class="footer__copy">© 2026 AN Psixoloji Dəstək və Reabilitasiya Mərkəzi. Bütün hüquqlar qorunur.</p>
+</footer>
+
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
